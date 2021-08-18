@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>js input ways</title>
+</head>
+
+<body>
+    <script>
+        function milage() {
+
+            const km = document.getElementById('kms').value;
+            const petrol = document.getElementById('fuel').value;
+            // document.writeln(<h1> +km/petrol )
+            document.getElementById('result').value = (km / petrol);
+
+        }
+
+        //let kms = prompt(" tell us how many km u have driven", "")
+        //let liters = prompt("tell us fule intake for" + kms, "")
+       // document.writeln("<h1>" + kms / liters + "</h1>");
+    </script>
+    <noscript>
+        js is not available
+    </noscript>
+    <input type="text" id="kms " placeholder=="kilometer"><br />
+    <input type="text " id="fuel" placeholder="fuel">
+    <input type="button" value="get milage" onclick="milage()">
+    <output id="result"></output>
+
+</body>
+
+</html>
